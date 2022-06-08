@@ -1,6 +1,5 @@
 package com.cybersoft.asimovapi.service;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -25,7 +24,6 @@ public class CourseServiceImpl implements CourseService {
     private CourseRepository courseRepository;
     
     private static final String ENTITY = "Course";
-
     private final Validator validator;
 
     public CourseServiceImpl(CourseRepository courseRepository, Validator validator) {
@@ -71,11 +69,4 @@ public class CourseServiceImpl implements CourseService {
             return ResponseEntity.ok().build();
         }).orElseThrow(() -> new ResourceNotFoundException(ENTITY, courseId));
     }
-
-    
-
-  
-
-   
-    
 }

@@ -21,9 +21,9 @@ import com.cybersoft.asimovapi.resource.SaveCourseResource;
 @RestController
 @RequestMapping("/api/v1/courses")
 public class coursesController {
-    @Autowired
+
     private CourseService courseService;
-    @Autowired
+
     private courseMapper mapper;
 
     @GetMapping
