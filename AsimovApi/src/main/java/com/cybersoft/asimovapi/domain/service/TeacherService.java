@@ -15,7 +15,7 @@ public interface TeacherService {
 
     Teacher createTeacher(Teacher teacher);
 
-    Teacher UpdateTeacher(long teacherId, Teacher teacher);
+    Teacher updateTeacher(long teacherId, Teacher teacher);
 
     ResponseEntity<?> deleteTeacher(long teacherId);
 }

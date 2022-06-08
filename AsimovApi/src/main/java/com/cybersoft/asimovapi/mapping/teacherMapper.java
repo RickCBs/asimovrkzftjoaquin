@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.cybersoft.asimovapi.domain.model.Teacher;
+import com.cybersoft.asimovapi.resource.SaveTeacherResource;
 import com.cybersoft.asimovapi.resource.TeacherResource;
 import com.cybersoft.shared.mapping.EnhancedModelMapper;
 
@@ -19,5 +20,9 @@ public class teacherMapper {
 
     public List<TeacherResource> modelListToResource(List<Teacher> modelList){
         return mapper.mapList(modelList, TeacherResource.class);
+    }
+
+    public Teacher toModel(SaveTeacherResource resource) {
+        return mapper.map(resource, Teacher.class);
     }
 }

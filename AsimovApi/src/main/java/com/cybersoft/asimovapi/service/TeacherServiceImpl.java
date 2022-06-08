@@ -34,7 +34,7 @@ public class TeacherServiceImpl implements TeacherService{
     }
 
     @Override
-    public Teacher UpdateTeacher(long teacherId, Teacher teacher) {
+    public Teacher updateTeacher(long teacherId, Teacher teacher) {
         Set<ConstraintViolation<Teacher>> violations = validator.validate(teacher);
         if(!violations.isEmpty())
             throw new ResourceValidationException(ENTITY, violations);

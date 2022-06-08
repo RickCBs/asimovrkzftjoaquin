@@ -1,4 +1,4 @@
-package com.cybersoft.asimovapi.shared.mapping;
+package com.cybersoft.shared.mapping;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

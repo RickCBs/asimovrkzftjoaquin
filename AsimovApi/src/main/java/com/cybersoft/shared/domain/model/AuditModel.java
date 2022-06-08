@@ -1,4 +1,4 @@
-package com.cybersoft.asimovapi.shared.domain.model;
+package com.cybersoft.shared.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

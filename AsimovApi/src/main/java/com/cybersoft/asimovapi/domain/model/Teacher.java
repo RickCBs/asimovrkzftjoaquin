@@ -1,5 +1,4 @@
 package com.cybersoft.asimovapi.domain.model;
-import java.util.List;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
