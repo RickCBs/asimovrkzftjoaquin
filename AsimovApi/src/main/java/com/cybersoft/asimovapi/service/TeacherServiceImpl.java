@@ -18,7 +18,7 @@ import com.cybersoft.shared.exception.ResourceValidationException;
 
 
 @Service
-public class CourseServiceImpl implements TeacherService{
+public class TeacherServiceImpl implements TeacherService{
 
     @Autowired
     private TeacherRepository teacherRepository;
@@ -28,7 +28,7 @@ public class CourseServiceImpl implements TeacherService{
 
     private static final String ENTITY = "Teacher";
 
-    public CourseServiceImpl(TeacherRepository teacherRepository, Validator validator) {
+    public TeacherServiceImpl(TeacherRepository teacherRepository, Validator validator) {
         this.teacherRepository = teacherRepository;
         this.validator = validator;
     }
