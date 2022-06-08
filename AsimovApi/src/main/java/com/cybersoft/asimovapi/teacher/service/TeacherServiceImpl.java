@@ -1,4 +1,4 @@
-package com.cybersoft.asimovapi.service;
+package com.cybersoft.asimovapi.teacher.service;
 
 import java.util.List;
 import java.util.Set;
@@ -6,24 +6,24 @@ import java.util.Set;
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cybersoft.asimovapi.teacher.domain.model.Teacher;
+import com.cybersoft.asimovapi.teacher.domain.repository.TeacherRepository;
+import com.cybersoft.asimovapi.teacher.domain.service.TeacherService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.cybersoft.asimovapi.domain.model.Teacher;
-import com.cybersoft.asimovapi.domain.repository.TeacherRepository;
-import com.cybersoft.asimovapi.domain.service.TeacherService;
 import com.cybersoft.shared.exception.ResourceNotFoundException;
 import com.cybersoft.shared.exception.ResourceValidationException;
 
 
 @Service
-public class TeacherServiceImpl implements TeacherService{
+public class TeacherServiceImpl implements TeacherService {
 
-    @Autowired
+
     private TeacherRepository teacherRepository;
 
-    @Autowired
+
     private final Validator validator;
 
     private static final String ENTITY = "Teacher";

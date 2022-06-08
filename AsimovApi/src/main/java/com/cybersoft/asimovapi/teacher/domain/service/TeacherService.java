@@ -1,11 +1,10 @@
-package com.cybersoft.asimovapi.domain.service;
+package com.cybersoft.asimovapi.teacher.domain.service;
 
 import java.util.List;
 
+import com.cybersoft.asimovapi.teacher.domain.model.Teacher;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import com.cybersoft.asimovapi.domain.model.Teacher;
 
 @Service
 public interface TeacherService {

@@ -1,12 +1,12 @@
-package com.cybersoft.asimovapi.mapping;
+package com.cybersoft.asimovapi.teacher.mapping;
 
 import java.util.List;
 
+import com.cybersoft.asimovapi.teacher.domain.model.Teacher;
+import com.cybersoft.asimovapi.teacher.resource.SaveTeacherResource;
+import com.cybersoft.asimovapi.teacher.resource.TeacherResource;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.cybersoft.asimovapi.domain.model.Teacher;
-import com.cybersoft.asimovapi.resource.SaveTeacherResource;
-import com.cybersoft.asimovapi.resource.TeacherResource;
 import com.cybersoft.shared.mapping.EnhancedModelMapper;
 
 public class teacherMapper {

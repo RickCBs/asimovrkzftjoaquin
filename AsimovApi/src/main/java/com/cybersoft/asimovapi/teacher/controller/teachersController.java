@@ -1,8 +1,9 @@
-package com.cybersoft.asimovapi.controller;
+package com.cybersoft.asimovapi.teacher.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.cybersoft.asimovapi.teacher.resource.SaveTeacherResource;
+import com.cybersoft.asimovapi.teacher.resource.TeacherResource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,17 +14,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cybersoft.asimovapi.domain.service.TeacherService;
-import com.cybersoft.asimovapi.mapping.teacherMapper;
-import com.cybersoft.asimovapi.resource.SaveTeacherResource;
-import com.cybersoft.asimovapi.resource.TeacherResource;
+import com.cybersoft.asimovapi.teacher.domain.service.TeacherService;
+import com.cybersoft.asimovapi.teacher.mapping.teacherMapper;
 
 @RestController
 @RequestMapping("/api/v1/teachers")
 public class teachersController {
-    @Autowired
+
     private TeacherService teacherService;
-    @Autowired
+
     private teacherMapper mapper;
 
     @GetMapping()

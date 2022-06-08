@@ -1,19 +1,14 @@
-package com.cybersoft.asimovapi.domain.model;
-import javax.persistence.*;
+package com.cybersoft.asimovapi.teacher.resource;
+
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.Data;
 
-@Entity
 @Data
-@Table(name = "teacher")
-public class Teacher{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    
+public class SaveTeacherResource {
+
     @NotNull
     @NotBlank
     private int point;
@@ -40,9 +35,4 @@ public class Teacher{
     @NotNull
     @NotBlank
     private String phone;
-
-    //Relationships
-    //@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE},
-    //mappedBy = "teachers")
-    //private List<Course> courses;
 }
