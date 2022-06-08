@@ -13,7 +13,7 @@ public interface TeacherService {
 
     Teacher getTeacherById(long teacherId);
 
-    Teacher creaeTeacher(long teacherId);
+    Teacher createTeacher(long teacherId);
 
     Teacher UpdateTeacher(long teacherId);
 
