@@ -1,12 +1,12 @@
-package com.cybersoft.asimovapi.mapping;
+package com.cybersoft.asimovapi.course.mapping;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.cybersoft.asimovapi.domain.model.Course;
-import com.cybersoft.asimovapi.resource.CourseResource;
-import com.cybersoft.asimovapi.resource.SaveCourseResource;
+import com.cybersoft.asimovapi.course.domain.model.Course;
+import com.cybersoft.asimovapi.course.resource.CourseResource;
+import com.cybersoft.asimovapi.course.resource.SaveCourseResource;
 import com.cybersoft.shared.mapping.EnhancedModelMapper;
 
 public class courseMapper {

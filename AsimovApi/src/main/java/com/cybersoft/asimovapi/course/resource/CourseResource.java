@@ -1,4 +1,4 @@
-package com.cybersoft.asimovapi.resource;
+package com.cybersoft.asimovapi.course.resource;
 
 import lombok.Data;
 

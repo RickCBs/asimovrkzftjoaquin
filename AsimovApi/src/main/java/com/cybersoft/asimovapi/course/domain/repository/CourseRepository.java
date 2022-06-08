@@ -1,9 +1,9 @@
-package com.cybersoft.asimovapi.domain.repository;
+package com.cybersoft.asimovapi.course.domain.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.cybersoft.asimovapi.domain.model.Course;
+import com.cybersoft.asimovapi.course.domain.model.Course;
 
 import java.util.Optional;
 

@@ -1,4 +1,4 @@
-package com.cybersoft.asimovapi.domain.model;
+package com.cybersoft.asimovapi.course.domain.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

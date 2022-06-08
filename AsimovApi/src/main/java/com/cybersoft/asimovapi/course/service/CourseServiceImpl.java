@@ -1,12 +1,12 @@
-package com.cybersoft.asimovapi.service;
+package com.cybersoft.asimovapi.course.service;
 
+import com.cybersoft.asimovapi.course.domain.repository.CourseRepository;
+import com.cybersoft.asimovapi.course.domain.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.cybersoft.asimovapi.domain.model.Course;
-import com.cybersoft.asimovapi.domain.repository.CourseRepository;
-import com.cybersoft.asimovapi.domain.service.CourseService;
+import com.cybersoft.asimovapi.course.domain.model.Course;
 import com.cybersoft.shared.exception.ResourceNotFoundException;
 import com.cybersoft.shared.exception.ResourceValidationException;
 

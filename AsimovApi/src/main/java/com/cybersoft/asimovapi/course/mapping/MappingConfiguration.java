@@ -1,6 +1,6 @@
-package com.cybersoft.asimovapi.mapping;
+package com.cybersoft.asimovapi.course.mapping;
 
-import com.cybersoft.asimovapi.resource.SaveCourseResource;
+import com.cybersoft.asimovapi.course.resource.SaveCourseResource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

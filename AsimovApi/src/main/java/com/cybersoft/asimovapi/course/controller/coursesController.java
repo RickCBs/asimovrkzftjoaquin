@@ -1,8 +1,7 @@
-package com.cybersoft.asimovapi.controller;
+package com.cybersoft.asimovapi.course.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cybersoft.asimovapi.domain.service.CourseService;
-import com.cybersoft.asimovapi.mapping.courseMapper;
-import com.cybersoft.asimovapi.resource.CourseResource;
-import com.cybersoft.asimovapi.resource.SaveCourseResource;
+import com.cybersoft.asimovapi.course.domain.service.CourseService;
+import com.cybersoft.asimovapi.course.mapping.courseMapper;
+import com.cybersoft.asimovapi.course.resource.CourseResource;
+import com.cybersoft.asimovapi.course.resource.SaveCourseResource;
 
 @RestController
 @RequestMapping("/api/v1/courses")
