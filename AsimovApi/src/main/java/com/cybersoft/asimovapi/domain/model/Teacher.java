@@ -11,7 +11,7 @@ import lombok.Data;
 public class Teacher{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     
     @NotNull
     @NotBlank
@@ -38,8 +38,7 @@ public class Teacher{
     private String phone;
 
     //Relationships
-    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE},
-    mappedBy = "teachers")
-    private List<Course> courses;
-
+    //@ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE},
+    //mappedBy = "teachers")
+    //private List<Course> courses;
 }
